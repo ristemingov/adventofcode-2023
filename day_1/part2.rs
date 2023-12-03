@@ -60,17 +60,7 @@ fn main() {
         for line in lines {
             if let Ok(row) = line {
                 let found = find_numbers(row);
-                println!("{}", found);
                 _sum += found;
-                // let mut digits = vec![];
-                // for r in row.chars() {
-                //     if r.is_digit(10) {
-                //         digits.push((r as i32) - 0x30);
-                //     }
-                // }
-                // if digits.len() > 0 {
-                //     _sum += digits[0] * 10 + digits[digits.len() - 1];
-                // }
             }
         }
     }
