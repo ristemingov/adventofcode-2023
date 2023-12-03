@@ -1,13 +1,7 @@
-use std::env;
 use std::collections::HashMap;
-mod utils;
+use crate::utils;
 
-
-fn main() {
-    let args: Vec<String> = env::args().collect();
-
-    let file_path = &args[1];
-
+pub fn solve(file_path: &str) {
     println!("In file {}", file_path);
     let _possible: HashMap<&str, i32> = HashMap::from([
         ("red", 12),
@@ -16,7 +10,7 @@ fn main() {
     ]);
 
     let mut _sum: i32 = 0;
-    if let Ok(lines) = utils::read_lines(file_path) {
+    if let Ok(lines) = utils::misc::read_lines(file_path) {
         'lineLoop: for line in lines {
             if let Ok(row) = line {
                 let v: Vec<&str> = row.split(':').collect();
@@ -31,15 +25,12 @@ fn main() {
                         let tup: Vec<&str> = color.trim().split(' ').collect();
                         let num_cubes: i32 = tup[0].parse().unwrap();
                         if _possible.get(&tup[1]).unwrap() < &num_cubes {
-                            continue 'lineLoop
+                            continue 'lineLoop;
                         }
-
                     }
-                   
                 }
-                
+
                 _sum += game;
-                
             }
         }
     }
