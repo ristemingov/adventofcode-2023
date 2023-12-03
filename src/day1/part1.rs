@@ -1,16 +1,10 @@
-use std::env;
-mod utils;
+use crate::utils;
 
-
-fn main() {
-    let args: Vec<String> = env::args().collect();
-
-    let file_path = &args[1];
-
+pub fn solve(file_path: &str) {
     println!("In file {}", file_path);
 
     let mut _sum: i32 = 0;
-    if let Ok(lines) = utils::read_lines(file_path) {
+    if let Ok(lines) = utils::misc::read_lines(file_path) {
         for line in lines {
             if let Ok(row) = line {
                 let mut digits = vec![];
@@ -27,4 +21,3 @@ fn main() {
     }
     println!("{}", _sum);
 }
-
