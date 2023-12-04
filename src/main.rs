@@ -1,7 +1,10 @@
 use std::env;
+
 mod utils;
+
 mod day1;
 mod day2;
+mod day3;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -9,7 +12,7 @@ fn main() {
     let day = &args[1];
     let part = &args[2];
 
-    let file_path: String = format!("data/day_{}/input.txt", day);
+    let file_path: String = format!("data/day{}/input.txt", day);
 
     let day_num: i32 = day.parse().unwrap();
     let part_num: i32 = part.parse().unwrap();
@@ -25,6 +28,12 @@ fn main() {
             match part_num {
                 1 => day2::part1::solve(&file_path),
                 2 => day2::part2::solve(&file_path),
+                _ => panic!("Invalid part for day: {}. Selected part {}", day, part),
+            }
+
+        3 =>
+            match part_num {
+                1 => day3::part1::solve(&file_path),
                 _ => panic!("Invalid part for day: {}. Selected part {}", day, part),
             }
 
