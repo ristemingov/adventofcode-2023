@@ -62,14 +62,11 @@ To run any of the solutions:
 
 Here's my progress so far:
 
- [x] Day 1: Trebuchet?!
-
- [x] Day 2: Cube Conundrum
-
- [] Day 3: Gear Ratios
-
- [] Day 4: Scratchcards
-
+- [x] Day 1: Trebuchet?!
+- [x] Day 2: Cube Conundrum
+- [x] Day 3: Gear Ratios
+- [ ] Day 4: Scratchcards
+- [ ] Day 5: If You Give A Seed A Fertilizer
 
 
 
