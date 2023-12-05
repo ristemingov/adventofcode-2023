@@ -34,6 +34,7 @@ fn main() {
         3 =>
             match part_num {
                 1 => day3::part1::solve(&file_path),
+                2 => day3::part2::solve(&file_path),
                 _ => panic!("Invalid part for day: {}. Selected part {}", day, part),
             }
 
