@@ -66,7 +66,7 @@ Here's my progress so far:
 - [x] Day 2: Cube Conundrum
 - [x] Day 3: Gear Ratios
 - [x] Day 4: Scratchcards
-- [ ] Day 5: If You Give A Seed A Fertilizer
+- [x] Day 5: If You Give A Seed A Fertilizer
 
 
 
