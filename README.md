@@ -67,7 +67,7 @@ Here's my progress so far:
 - [x] Day 3: Gear Ratios
 - [x] Day 4: Scratchcards
 - [x] Day 5: If You Give A Seed A Fertilizer
-- [ ] Day 6: Wait For It
+- [x] Day 6: Wait For It
 - [ ] Day 7: Camel Cards
 - [ ] Day 8: Haunted Wasteland
 - [ ] Day 9: Mirage Maintenance
