@@ -39,7 +39,7 @@ pub fn solve(file_path: &str) {
         if _key.ends_with("A") {
             let mut current_key: String = _key.to_string();
             let mut _sum: i128 = 0;
-            'lineLoop: while true {
+            'lineLoop: loop {
                 for _dir in &directions {
                     let _value: &Vec<String> = map.get(&current_key).unwrap();
                     current_key = _value[*_dir].to_string();
