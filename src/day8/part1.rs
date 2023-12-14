@@ -31,7 +31,7 @@ pub fn solve(file_path: &str) {
     }
     let mut current_key: String = "AAA".to_string();
     let mut _sum: i32 = 1;
-    'lineLoop: while true {
+    'lineLoop: loop {
         for _dir in &directions {
             let _value: &Vec<String> = map.get(&current_key).unwrap();
             current_key = _value[*_dir].to_string();

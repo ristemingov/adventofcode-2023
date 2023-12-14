@@ -69,8 +69,8 @@ Here's my progress so far:
 - [x] Day 5: If You Give A Seed A Fertilizer
 - [x] Day 6: Wait For It
 - [x] Day 7: Camel Cards
-- [ ] Day 8: Haunted Wasteland
-- [ ] Day 9: Mirage Maintenance
+- [x] Day 8: Haunted Wasteland
+- [x] Day 9: Mirage Maintenance
 - [ ] Day 10: Pipe Maze
 
 
