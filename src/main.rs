@@ -12,6 +12,13 @@ mod day7;
 mod day8;
 mod day9;
 mod day10;
+mod day11;
+mod day12;
+mod day13;
+mod day14;
+mod day15;
+mod day16;
+
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -91,6 +98,48 @@ fn main() {
             match part_num {
                 1 => day10::part1::solve(&file_path),
                 2 => day10::part2::solve(&file_path),
+                _ => panic!("Invalid part for day: {}. Selected part {}", day, part),
+            }
+        
+        11 => 
+            match part_num {
+                1 => day11::part1::solve(&file_path),
+                2 => day11::part2::solve(&file_path),
+                _ => panic!("Invalid part for day: {}. Selected part {}", day, part),
+            }
+        
+        12 =>
+            match part_num {
+                1 => day12::part1::solve(&file_path),
+                2 => day12::part2::solve(&file_path),
+                _ => panic!("Invalid part for day: {}. Selected part {}", day, part),
+            }
+        
+        13 =>
+            match part_num {
+                1 => day13::part1::solve(&file_path),
+                2 => day13::part2::solve(&file_path),
+                _ => panic!("Invalid part for day: {}. Selected part {}", day, part),
+            }
+        
+        14 =>
+            match part_num {
+                1 => day14::part1::solve(&file_path),
+                2 => day14::part2::solve(&file_path),
+                _ => panic!("Invalid part for day: {}. Selected part {}", day, part),
+            }
+        
+        15 =>
+            match part_num {
+                1 => day15::part1::solve(&file_path),
+                2 => day15::part2::solve(&file_path),
+                _ => panic!("Invalid part for day: {}. Selected part {}", day, part),
+            }
+        
+        16 =>
+            match part_num {
+                1 => day16::part1::solve(&file_path),
+                2 => day16::part2::solve(&file_path),
                 _ => panic!("Invalid part for day: {}. Selected part {}", day, part),
             }
 
