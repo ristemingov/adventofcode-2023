@@ -72,7 +72,12 @@ Here's my progress so far:
 - [x] Day 8: Haunted Wasteland
 - [x] Day 9: Mirage Maintenance
 - [x] Day 10: Pipe Maze
-
+- [ ] Day 11: Cosmic Expansion
+- [ ] Day 12: Hot Springs
+- [ ] Day 13: Point of Incidence
+- [ ] Day 14: Parabolic Reflector Dish
+- [ ] Day 15: Lens Library
+- [ ] Day 16: The Floor Will Be Lava
 
 
 ## Learning Resources
