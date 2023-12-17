@@ -1,6 +1,6 @@
 use crate::utils;
 use std::collections::HashMap;
-use num::{Integer};
+use num::Integer;
 
 
 
