@@ -74,8 +74,8 @@ Here's my progress so far:
 - [x] Day 10: Pipe Maze
 - [x] Day 11: Cosmic Expansion
 - [x] Day 12: Hot Springs
-- [ ] Day 13: Point of Incidence
-- [ ] Day 14: Parabolic Reflector Dish
+- [x] Day 13: Point of Incidence
+- [x] Day 14: Parabolic Reflector Dish
 - [ ] Day 15: Lens Library
 - [ ] Day 16: The Floor Will Be Lava
 
