@@ -76,7 +76,7 @@ Here's my progress so far:
 - [x] Day 12: Hot Springs
 - [x] Day 13: Point of Incidence
 - [x] Day 14: Parabolic Reflector Dish
-- [ ] Day 15: Lens Library
+- [x] Day 15: Lens Library
 - [ ] Day 16: The Floor Will Be Lava
 
 
