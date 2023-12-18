@@ -78,6 +78,7 @@ Here's my progress so far:
 - [x] Day 14: Parabolic Reflector Dish
 - [x] Day 15: Lens Library
 - [x] Day 16: The Floor Will Be Lava
+- [x] Day 17: Clumsy Crucible
 
 
 ## Learning Resources
