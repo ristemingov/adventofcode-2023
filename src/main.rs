@@ -18,7 +18,7 @@ mod day13;
 mod day14;
 mod day15;
 mod day16;
-
+mod day17;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -142,6 +142,14 @@ fn main() {
                 2 => day16::part2::solve(&file_path),
                 _ => panic!("Invalid part for day: {}. Selected part {}", day, part),
             }
+        
+        17 =>
+            match part_num {
+                1 => day17::part1::solve(&file_path),
+                2 => day17::part2::solve(&file_path),
+                _ => panic!("Invalid part for day: {}. Selected part {}", day, part),
+            }
+
 
         _ => panic!("Invalid day selected: {}.", day),
     }
