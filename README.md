@@ -77,7 +77,7 @@ Here's my progress so far:
 - [x] Day 13: Point of Incidence
 - [x] Day 14: Parabolic Reflector Dish
 - [x] Day 15: Lens Library
-- [ ] Day 16: The Floor Will Be Lava
+- [x] Day 16: The Floor Will Be Lava
 
 
 ## Learning Resources
