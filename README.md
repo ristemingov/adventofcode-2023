@@ -79,6 +79,7 @@ Here's my progress so far:
 - [x] Day 15: Lens Library
 - [x] Day 16: The Floor Will Be Lava
 - [x] Day 17: Clumsy Crucible
+- [x] Day 18: Lavaduct Lagoon
 
 
 ## Learning Resources
