@@ -80,6 +80,13 @@ Here's my progress so far:
 - [x] Day 16: The Floor Will Be Lava
 - [x] Day 17: Clumsy Crucible
 - [x] Day 18: Lavaduct Lagoon
+- [ ] Day 19
+- [ ] Day 20
+- [ ] Day 21
+- [ ] Day 22
+- [ ] Day 23
+- [ ] Day 24
+- [ ] Day 25
 
 
 ## Learning Resources

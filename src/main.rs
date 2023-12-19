@@ -20,6 +20,14 @@ mod day15;
 mod day16;
 mod day17;
 mod day18;
+mod day19;
+mod day20;
+mod day21;
+mod day22;
+mod day23;
+mod day24;
+mod day25;
+
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -155,6 +163,55 @@ fn main() {
             match part_num {
                 1 => day18::part1::solve(&file_path),
                 2 => day18::part2::solve(&file_path),
+                _ => panic!("Invalid part for day: {}. Selected part {}", day, part),
+            }
+
+        19 =>
+            match part_num {
+                1 => day19::part1::solve(&file_path),
+                2 => day19::part2::solve(&file_path),
+                _ => panic!("Invalid part for day: {}. Selected part {}", day, part),
+            }
+        
+        20 =>
+            match part_num {
+                1 => day20::part1::solve(&file_path),
+                2 => day20::part2::solve(&file_path),
+                _ => panic!("Invalid part for day: {}. Selected part {}", day, part),
+            }
+        
+        21 =>
+            match part_num {
+                1 => day21::part1::solve(&file_path),
+                2 => day21::part2::solve(&file_path),
+                _ => panic!("Invalid part for day: {}. Selected part {}", day, part),
+            }
+
+        22 =>
+            match part_num {
+                1 => day22::part1::solve(&file_path),
+                2 => day22::part2::solve(&file_path),
+                _ => panic!("Invalid part for day: {}. Selected part {}", day, part),
+            }
+        
+        23 =>
+            match part_num {
+                1 => day23::part1::solve(&file_path),
+                2 => day23::part2::solve(&file_path),
+                _ => panic!("Invalid part for day: {}. Selected part {}", day, part),
+            }
+        
+        24 =>
+            match part_num {
+                1 => day24::part1::solve(&file_path),
+                2 => day24::part2::solve(&file_path),
+                _ => panic!("Invalid part for day: {}. Selected part {}", day, part),
+            }
+        
+        25 =>
+            match part_num {
+                1 => day25::part1::solve(&file_path),
+                2 => day25::part2::solve(&file_path),
                 _ => panic!("Invalid part for day: {}. Selected part {}", day, part),
             }
 
