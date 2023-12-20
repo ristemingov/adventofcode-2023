@@ -1,30 +1,27 @@
-use std::collections::HashMap;
 use crate::utils;
-
+use std::collections::HashMap;
 
 #[derive(Debug)]
 struct Queue<T> {
     queue: Vec<T>,
-  }
-  
-  impl<T> Queue<T> {
+}
+
+impl<T> Queue<T> {
     fn new() -> Self {
-      Queue { queue: Vec::new() }
+        Queue { queue: Vec::new() }
     }
-  
+
     fn enqueue(&mut self, item: T) {
-      self.queue.push(item)
+        self.queue.push(item)
     }
-  
+
     fn dequeue(&mut self) -> T {
-      self.queue.remove(0)
+        self.queue.remove(0)
     }
     fn is_empty(&self) -> bool {
-      self.queue.is_empty()
+        self.queue.is_empty()
     }
-  
-  }
-
+}
 
 #[derive(Debug)]
 struct Module {
@@ -36,7 +33,6 @@ struct Module {
 }
 
 impl Module {
-
     fn set_ff_memory(&mut self, ff_memory: &String) {
         self.ff_memory = ff_memory.clone();
     }
@@ -52,7 +48,6 @@ impl Module {
     }
 }
 
-
 pub fn solve(file_path: &str) {
     println!("In file {}", file_path);
     let mut instructions: HashMap<String, Module> = HashMap::new();
@@ -61,8 +56,14 @@ pub fn solve(file_path: &str) {
     if let Ok(lines) = utils::misc::read_lines(file_path) {
         for (_i, _line) in lines.enumerate() {
             if let Ok(_row) = _line {
-                let split_inst: Vec<String> = _row.split(" -> ").map(|p| p.to_string()).collect::<Vec<String>>();
-                let outputs = split_inst[1].split(", ").map(|p| p.to_string()).collect::<Vec<String>>();
+                let split_inst: Vec<String> = _row
+                    .split(" -> ")
+                    .map(|p| p.to_string())
+                    .collect::<Vec<String>>();
+                let outputs = split_inst[1]
+                    .split(", ")
+                    .map(|p| p.to_string())
+                    .collect::<Vec<String>>();
                 if split_inst[0] == "broadcaster" {
                     broadcast_outputs.extend(outputs.into_iter().clone());
                 } else {
@@ -79,7 +80,6 @@ pub fn solve(file_path: &str) {
                         inst_name: inst_name.clone(),
                         memory: memory.clone(),
                         ff_memory: ffmemory.clone(),
-
                     };
                     instructions.insert(inst_name, inst_module);
                 }
@@ -108,19 +108,17 @@ pub fn solve(file_path: &str) {
 
     let mut low = 0;
     let mut high = 0;
-    
-    
+
     for _i in 0..1000 {
         low += 1;
-        
+
         let mut queue: Queue<(String, String, String)> = Queue::new();
-        
+
         for b in &broadcast_outputs {
             queue.enqueue(("broadcaster".to_string(), b.to_string(), "low".to_string()));
         }
-        
+
         while !queue.is_empty() {
-            
             let (origin, target, pulse) = queue.dequeue();
 
             if pulse == "low" {
@@ -132,17 +130,15 @@ pub fn solve(file_path: &str) {
             if !instructions.contains_key(&target) {
                 continue;
             }
-            let module = instructions.get_mut(&target).unwrap(); 
-    
+            let module = instructions.get_mut(&target).unwrap();
+
             if module.inst_kind == "%" {
                 if pulse == "low" {
                     let mut _out = "low".to_string();
                     if module.get_ff_memory() == "off" {
                         module.set_ff_memory(&"on".to_string());
-                       
                     } else {
                         module.set_ff_memory(&"off".to_string());
-                        
                     }
                     if module.get_ff_memory() == "on" {
                         _out = "high".to_string();
@@ -151,14 +147,12 @@ pub fn solve(file_path: &str) {
                     }
                     for x in module.get_outputs() {
                         queue.enqueue((module.inst_name.clone(), x.clone(), _out.clone()));
-                        
                     }
                 }
             } else {
-                
                 module.memory.insert(origin.clone(), pulse.clone());
                 let mut _out1 = "high".to_string();
-                
+
                 if module.get_memory().values().all(|f| f == "high") {
                     _out1 = "low".to_string();
                 } else {
@@ -170,5 +164,5 @@ pub fn solve(file_path: &str) {
             }
         }
     }
-    println!("{} ", low*high);
+    println!("{} ", low * high);
 }
