@@ -83,7 +83,7 @@ Here's my progress so far:
 - [x] Day19: Aplenty
 - [x] Day 20: Pulse Propagation
 - [x] Day 21: Step Counter
-- [ ] Day 22
+- [x] Day 22: Sand Slabs
 - [ ] Day 23
 - [ ] Day 24
 - [ ] Day 25
