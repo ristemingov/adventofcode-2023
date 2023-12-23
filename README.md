@@ -84,7 +84,7 @@ Here's my progress so far:
 - [x] Day 20: Pulse Propagation
 - [x] Day 21: Step Counter
 - [x] Day 22: Sand Slabs
-- [ ] Day 23
+- [x] Day 23: A Long Walk
 - [ ] Day 24
 - [ ] Day 25
 
