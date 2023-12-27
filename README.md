@@ -86,7 +86,7 @@ Here's my progress so far:
 - [x] Day 22: Sand Slabs
 - [x] Day 23: A Long Walk
 - [x] Day 24: Never Tell Me The Odds
-- [ ] Day 25
+- [x] Day 25: Snowverload
 
 
 ## Learning Resources
