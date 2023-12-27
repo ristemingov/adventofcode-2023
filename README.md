@@ -55,8 +55,7 @@ To run any of the solutions:
 
 1. Ensure you have Rust installed. You can download it from [here](https://www.rust-lang.org/tools/install).
 2. Clone this repository.
-3. Navigate to the day's directory you want to run.
-4. Run `cargo run DAY PART` in the terminal. DAY is the day that we want to solve [1-25], PART is the part we want to solve of that day [1-2].
+3. Run `cargo run DAY PART` in the terminal. DAY is the day that we want to solve [1-25], PART is the part we want to solve of that day [1-2].
 
 ## Progress
 
